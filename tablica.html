@@ -1,0 +1,136 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+</head>
+<body>
+    <center></center>
+    <table border="1" cellpadding="1" width="400px" height="400px"> 
+        <tr>
+            <td colspan="3" align="center" valign="middle">Ичейка</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="3">9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td rowspan="2">11</td>
+        </tr>
+        <tr>
+            <td>13</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vod v server</title>
+</head>
+<body bgcolor="#FFFFFF" text="blank" link="#ooffoo" alink="#ooffoo" vlink="blue" >
+    <h2 align="center"> polzovatelskaia anketa </h2>
+    <form name="user_anketa" action="/cgi-bin/anketa.cgi" method="post" enctype="multipart/form-data">
+        <table border="0" cellpadding = "5" cellpadding = "3" align="center"width="98%">
+            <tr>
+                <th bgcolor="#999999" width = "50%">lichnie danie</th>
+                <th bgcolor="#999999" width = "50%">uvlechenia</th>
+            </tr>
+            <tr>
+            <td valign="top" bgcolor="#EEEEEE" width="50%">
+                vashe ima: <br>
+                <input type="text" size="30" maxlength="35" name="name">
+                <br>
+                vash parol: <br>
+                <input type="password" size="30" maxlength="35" name="password">
+                <br>
+                vasha fotografia: <br>
+                <input type="file" size="18" name="photo">
+            </td>
+            <td valign ="top" bgcolor="#EEEEEE" width ="50%">
+                <input type="checkbox" name="hobby" value="computers" checked> kompiuteri i internet
+                <br>
+                <input type="checkbox" name="hobby" value="art">literatura i iskustvo
+                <br>
+                <input type="checkbox" name="hobby" value="music"> musica i tansi
+                <br>
+                <input type="checkbox" name="hobby" value="auto"> avtomobili
+                <br>
+                <input type="checkbox" name="hobby" value="sport"> sport i aktivnie otdihaiut
+            
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor="#999999" width ="50%">mesto jitelstvo</th>
+            <th bgcolor="#999999" width ="50%">komentarii</th>
+        </tr>
+        <tr>
+            <td valign="top" bgcolor="#EEEEEE" width="50%">
+                <select name="city" size="5">
+                    <option value="">--- viberite gorod
+                        <option value="Moscow">Moscow
+                            <option value="Spb">Sankt-Peterburg 
+                                <option value="Samara">Samara
+                                    <option value="Ryazan">Ryazan
+                                        <option value="Krasnoyarsk">Krasnoyarsk
+                                            <option value="Komsomolsk">Komsomolsk
+                                                <option value="Vladivostok">Vladivostok
+
+                                                </option>
+                                            </option>
+                                        </option>
+                                    </option>
+                                </option>
+                            </option>
+                        </option>
+                    </option>
+                </select>
+                <br><br>
+                <select name="country">
+                    <option value="">---Viberite stranu ---
+                        <option value="Russia">Russia
+                            <option value="England">England
+                                <option value="USA">USA 
+                                    <option value="Germany">Germany
+                                        <option value="France">France
+
+                                        </option>
+                                    </option>
+                                </option>
+                            </option>
+                        </option>
+                    </option>
+                </select>
+            </td>
+            <td valign ="top" bgcolor="#EEEEEE" width="50%">
+                <textarea name="comments"  cols="25" rows="5"></textarea>
+                <br>
+                <input type="radio" name="site" value="not_first"> Ia tut ne v pervie raz 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" bgcolor ="#999900">
+                <input type="submit" value="Otravit">&nbsp;<input type="reset" value="Ochistit">
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

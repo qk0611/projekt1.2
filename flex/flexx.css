@@ -1,0 +1,36 @@
+p {
+    
+    padding-top: 40px;
+    margin: 0;
+    font-size: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    
+    }
+.inner-div{
+    background-color: blue;
+    width: 200px;
+    height: 200pxpx;
+    margin: 10px;
+}
+
+.container {
+    display:flex;
+    height: 600px;
+   
+
+}
+.item-1 {
+    align-self: flex-start;
+    
+}
+.item-2 {
+    align-self: center;
+
+}
+.item-3 {
+    align-self: flex-end;
+   
+}
+
